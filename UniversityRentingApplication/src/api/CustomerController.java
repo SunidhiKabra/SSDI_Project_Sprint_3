@@ -12,8 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import dao.CustomerDao;
 import model.Customer;
-import service.CustomerService;
-import service.ICustomerService;
 
 //@RequestMapping("/university/rental")
 public class CustomerController extends HttpServlet {

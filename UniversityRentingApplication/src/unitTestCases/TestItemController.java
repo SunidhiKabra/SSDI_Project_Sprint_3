@@ -1,3 +1,4 @@
+
 package unitTestCases;
 
 import static org.junit.Assert.assertEquals;
@@ -68,24 +69,20 @@ public class TestItemController {
 		assertEquals(in, i.getName());
 		assertEquals(id, i.getDescription());
 		assertEquals(ir, i.getRent(),0);
-		/*
+		
 		PreparedStatement p2 = null;
 		String sql2 = null;
 		ConnectionData connData = new ConnectionData();
 		Connection conn = ConnectionUtility.getConnection(connData);
 		try {
-			sql2 = "delete from Item where itemRent = ?";
-			System.out.println("1.");
+			sql2 = "delete from Item where customerId = ?";
 			p2 = conn.prepareStatement(sql2);
-			System.out.println("2.");
-			p2.setFloat(1, i.getRent());
-			System.out.println("3.");
+			p2.setInt(1, -1);
 			p2.executeUpdate();
-			System.out.println("4.");
 		}
 		catch (SQLException e) {
 			assertFalse(true);
-		}*/
+		}
 
 	}
 }

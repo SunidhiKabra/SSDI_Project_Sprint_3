@@ -12,8 +12,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 
-import com.mysql.jdbc.Statement;
-
 import dao.CustomerDao;
 import model.Customer;
 import model.ICustomer;
@@ -27,8 +25,8 @@ public class TestCustomerDao {
 	private DataSource ds;
 	@Mock
 	private Connection c;
-	@Mock
-	private PreparedStatement stmt;
+	//@Mock
+	//private PreparedStatement stmt;
 	@Mock
 	private CustomerDao cd;
 	//@Mock
